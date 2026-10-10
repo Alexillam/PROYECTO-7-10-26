@@ -31,8 +31,9 @@
             lblCapacidad = new Label();
             btnGuardar = new Button();
             lblNombre = new Label();
-            txtCap = new TextBox();
             txtN = new TextBox();
+            txtCap = new NumericUpDown();
+            ((System.ComponentModel.ISupportInitialize)txtCap).BeginInit();
             SuspendLayout();
             // 
             // lblCapacidad
@@ -64,32 +65,33 @@
             lblNombre.TabIndex = 8;
             lblNombre.Text = "Nombre Sala:";
             // 
-            // txtCap
-            // 
-            txtCap.Location = new Point(25, 136);
-            txtCap.Name = "txtCap";
-            txtCap.Size = new Size(125, 27);
-            txtCap.TabIndex = 11;
-            // 
             // txtN
             // 
-            txtN.Location = new Point(32, 68);
+            txtN.Location = new Point(25, 57);
             txtN.Name = "txtN";
             txtN.Size = new Size(125, 27);
             txtN.TabIndex = 12;
+            // 
+            // txtCap
+            // 
+            txtCap.Location = new Point(25, 137);
+            txtCap.Name = "txtCap";
+            txtCap.Size = new Size(46, 27);
+            txtCap.TabIndex = 13;
             // 
             // frmRegistraSala
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(274, 220);
-            Controls.Add(txtN);
             Controls.Add(txtCap);
+            Controls.Add(txtN);
             Controls.Add(lblNombre);
             Controls.Add(btnGuardar);
             Controls.Add(lblCapacidad);
             Name = "frmRegistraSala";
             Text = "frmRegistraSala";
+            ((System.ComponentModel.ISupportInitialize)txtCap).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -103,7 +105,7 @@
         private Label label2;
         private Label lblCapacidad;
         private Button btnGuardar;
-        private TextBox txtCap;
         private TextBox txtN;
+        private NumericUpDown txtCap;
     }
 }

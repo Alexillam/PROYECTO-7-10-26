@@ -28,12 +28,34 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "frmConsultaReservaciones";
+            dgvReservaciones = new DataGridView();
+            ((System.ComponentModel.ISupportInitialize)dgvReservaciones).BeginInit();
+            SuspendLayout();
+            // 
+            // dgvReservaciones
+            // 
+            dgvReservaciones.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvReservaciones.Location = new Point(12, 12);
+            dgvReservaciones.Name = "dgvReservaciones";
+            dgvReservaciones.RowHeadersWidth = 51;
+            dgvReservaciones.Size = new Size(758, 264);
+            dgvReservaciones.TabIndex = 0;
+            // 
+            // frmConsultaReservaciones
+            // 
+            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(786, 300);
+            Controls.Add(dgvReservaciones);
+            Name = "frmConsultaReservaciones";
+            Text = "frmConsultaReservaciones";
+            Load += frmConsultaReservaciones_Load;
+            ((System.ComponentModel.ISupportInitialize)dgvReservaciones).EndInit();
+            ResumeLayout(false);
         }
 
         #endregion
+
+        private DataGridView dgvReservaciones;
     }
 }
